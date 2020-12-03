@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Calc {
+	public static void main (String args []) {
+		
+		Scanner user = new Scanner (System.in);
+
+		
+		int first = user.nextInt();
+		char operator = user.next().charAt(0);
+		int second = user.nextInt();
+		int addition = first+second;
+
+				
+		System.out.println("Begin Calculation");
+		
+		
+		
+		
+		switch (operator) {
+		case '+':
+		{
+			System.out.println(addition);
+			break;
+		}
+		}
+	 
+ }
+}
