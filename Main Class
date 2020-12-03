@@ -3,19 +3,22 @@ import java.util.Scanner;
 public class Calc {
 	public static void main (String args []) {
 		
+		try {}finally {}
 		Scanner user = new Scanner (System.in);
-
+		
+		// Try statement here or aome ind of control flow statement to stop leak and control flow
+		
+		
+		
+		System.out.println("Begin Calculation");
 		
 		int first = user.nextInt();
 		char operator = user.next().charAt(0);
 		int second = user.nextInt();
 		int addition = first+second;
-
-				
-		System.out.println("Begin Calculation");
 		
 		
-		
+		// Finally statement here?
 		
 		switch (operator) {
 		case '+':
@@ -23,7 +26,9 @@ public class Calc {
 			System.out.println(addition);
 			break;
 		}
+		default :{
+			System.out.println("hi");
 		}
-	 
- }
+		}
+	}
 }
