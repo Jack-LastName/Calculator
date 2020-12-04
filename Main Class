@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Calc {
 	public static void main (String args []) {
 		
-		try {}finally {}
+		try {}finally {} //these statements will be moved to a more appropriate location when enough info learned.
 		Scanner user = new Scanner (System.in);
 		
 		
