@@ -1,0 +1,7 @@
+public class Liner {
+	public static void LineKeeper() {
+	String First = in.nextLine();
+	char c = First.charAt(0); 
+	int digit = c - '0';
+}
+}
