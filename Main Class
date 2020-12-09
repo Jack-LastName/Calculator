@@ -3,21 +3,26 @@ import java.util.Scanner;
 public class Calc {
 	public static void main (String args []) {
 		
-		try {}finally {} //these statements will be moved to a more appropriate location when enough info learned.
-		Scanner user = new Scanner (System.in);
-		
+		try {
+		Scanner user = new Scanner(System.in);
 		
 		/* note Section
-		 * Program functions so long as each value and operator are given on separate linnes, make it
+		 * Program functions so long as each value and operator are given on separate lines, make it
 		 * so they can be added naturally on one line possibly an issue for buffered reader
 		 * look into if a catch statement is necessary*/
 		
 		// Try statement here or some kind of control flow statement to stop leak and control flow
+		
+		// if char at x = " " read next character FOR allowing natural input and idiot proofing
+		// Maybe a switch statement checking each space for an entry vs space
+		
+		//char at checking not working here as each variable checking unique indexes rather than the line as a whole
+		
 		System.out.println("Begin Calculation");
 		
-		int first = user.nextInt();
-		char operator = user.next().charAt(0);
-		int second = user.nextInt();
+		int first = user.next().charAt(0);
+		char operator = user.next().charAt(2);
+		int second = user.next().charAt(4);
 		int addition = first+second;
 		int minus = first-second;
 		int Div = first/second;
@@ -32,23 +37,25 @@ public class Calc {
 		}
 		case '-':
 		{
-			System.out.println(minus);
+			System.out.print(minus);
 			break;
 		}
 		case '/':
 		{
-			System.out.println(Div);
+			System.out.print(Div);
 			break;
 		}
 		case '*':
 		{
-			System.out.println(multi);
+			System.out.print(multi);
 			break;
 		}
 		default :{
-			System.out.println("hi");
+			System.out.print("hi");
 			break;
 		}
 		}
+	}finally {
 	}
+}
 }
